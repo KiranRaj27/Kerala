@@ -9,24 +9,24 @@ body {
   font-family: "Numans", sans-serif;
 }
 
-/* .login {
+.login {
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(/resources/css/img/signin.jpg);
+    url(resources/css/img/signin.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/resources/css/img/signin.jpg);
-} */
+    url(resources/css/img/signin.jpg);
+}
 
 .signup {
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(/resources/css/img/signup.jpg);
+    url(resources/css/img/signup.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/resources/css/img/signup.jpg);
+    url(resources/css/img/signup.jpg);
 }
 
 .container {
