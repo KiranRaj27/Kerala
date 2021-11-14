@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Signup Page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" type="text/css" href="resources/css/login.css" />
+    <link rel="stylesheet" href="resources/css/signup.css" />
+    <title>Sign Up</title>
   </head>
+
   <body
     style="
       background-image: -webkit-linear-gradient(
@@ -27,99 +22,69 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(resources/css/img/signup.jpg);
     "
-    class="signup"
   >
     <div class="container">
-      <div class="d-flex justify-content-center h-100">
-        <div class="card-signup">
-          <div class="signup-header card-header">
-            <h3>Sign Up</h3>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="input-group form-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                    <i class="fas fa-user"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="name"
-                  required
-                />
-              </div>
-              <div class="input-group form-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fas fa-envelope"></i
-                  ></span>
-                </div>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="email"
-                  required
-                />
-              </div>
-              <div class="input-group form-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fas fa-mobile"></i
-                  ></span>
-                </div>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="phone number"
-                  required
-                />
-              </div>
-              <div class="input-group form-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fas fa-key"></i
-                  ></span>
-                </div>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="password"
-                  required
-                />
-              </div>
-
-              <div class="input-group form-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fas fa-key"></i
-                  ></span>
-                </div>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="re-type password"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <input
-                  type="submit"
-                  value="Signup"
-                  class="btn float-right login_btn"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="signup-footer card-footer">
-            <div class="d-flex justify-content-center links">
-              Already have an account?<a href="login.html">Sign In</a>
-            </div>
-          </div>
+      <form
+        id="my-form"
+        class="box-form"
+        onsubmit="return validateSignup()"
+        action="../Sign in/signin.html"
+      >
+        <h2>Sign up</h2>
+        <div class="box">
+          <i class="icon ion-ios-person"></i>
+          <input
+            id="name"
+            placeholder="Name"
+            type="text"
+            onclick="resetmssg()"
+          />
+          <small>Error mssg</small>
         </div>
-      </div>
+        <div class="box">
+          <i class="icon ion-ios-person"></i>
+          <input id="username" placeholder="Username" type="text" />
+          <small>Error mssg </small>
+        </div>
+        <div class="box">
+          <i class="icon ion-ios-mail"></i>
+          <input id="email" placeholder="Email" type="email" />
+          <small>Error mssg </small>
+        </div>
+        <div class="box">
+          <i class="icon ion-ios-call"></i>
+          <input id="mob" placeholder="Phone number" type="text" />
+          <small id="mssg">Error mssg </small>
+        </div>
+        <div class="box">
+          <i class="icon ion-ios-key"></i>
+          <input
+            id="pass"
+            onkeyup="trigger()"
+            type="Password"
+            placeholder="Password"
+          />
+          <small>Error mssg </small>
+          <div class="indicator">
+            <span class="weak"></span>
+            <span class="medium"></span>
+            <span class="strong"></span>
+          </div>
+          <div class="text"></div>
+        </div>
+        <div class="box">
+          <i class="icon ion-ios-key"></i>
+          <input type="password" placeholder="Retype Password" id="pass2" />
+          <small>Error mssg </small>
+        </div>
+
+        <br /><br />
+        <button class="bttn" type="submit">
+          <span class="sub">Submit</span>
+        </button>
+      </form>
     </div>
+
+    <script src="resources/js/signup.js"></script>
   </body>
 </html>
