@@ -28,7 +28,7 @@ function validateSignup() {
 
   let regExpWeak1 = /[a-zA-Z]/;
   let regExpMedium2 = /\d+/;
-  let regExpStrong3 = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+  let regExpStrong3 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
   let regExpMobile = /^([0-9]{3})([.-\s])?([0-9]{3})([.-\s])?([0-9]{4})$/;
   let nameExp = /^([A-Za-z]{3})$/;
   let emailExp =
@@ -79,7 +79,7 @@ function validateSignup() {
     setErrorFor(password, "Password cannot be blank");
     valid = false;
   } else if (
-    password.value.trim().length >= 10 &&
+    password.value.trim().length >= 8 &&
     password.value.match(regExpWeak1) &&
     password.value.match(regExpMedium2) &&
     password.value.match(regExpStrong3)

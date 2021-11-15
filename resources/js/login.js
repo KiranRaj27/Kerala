@@ -35,7 +35,7 @@ function validateLogin() {
   ) {
     setSuccessFor(password, " ");
   } else {
-    setErrorFor(password, " Password is not in correct ");
+    setErrorFor(password, " Password is not in correct format");
     valid = false;
   }
   return valid;

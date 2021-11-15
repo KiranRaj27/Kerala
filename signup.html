@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="resources/css/signup.css" />
     <title>Sign Up</title>
   </head>
@@ -32,39 +35,39 @@
       >
         <h2>Sign up</h2>
         <div class="box">
-          <i class="icon ion-ios-person"></i>
+          <i class="fas fa-user-circle"></i>
           <input
             id="name"
             placeholder="Name"
             type="text"
             onclick="resetmssg()"
           />
-          <small>Error mssg</small>
+          <small>message to user</small>
         </div>
         <div class="box">
-          <i class="icon ion-ios-person"></i>
+          <i class="fas fa-user-cog"></i>
           <input id="username" placeholder="Username" type="text" />
-          <small>Error mssg </small>
+          <small>message to user </small>
         </div>
         <div class="box">
-          <i class="icon ion-ios-mail"></i>
+          <i class="fas fa-at"></i>
           <input id="email" placeholder="Email" type="email" />
-          <small>Error mssg </small>
+          <small>message to user </small>
         </div>
         <div class="box">
-          <i class="icon ion-ios-call"></i>
+          <i class="fas fa-mobile"></i>
           <input id="mob" placeholder="Phone number" type="text" />
-          <small id="mssg">Error mssg </small>
+          <small id="mssg">message to user </small>
         </div>
         <div class="box">
-          <i class="icon ion-ios-key"></i>
+          <i class="fas fa-unlock"></i>
           <input
             id="pass"
             onkeyup="trigger()"
             type="Password"
             placeholder="Password"
           />
-          <small>Error mssg </small>
+          <small>message to user </small>
           <div class="indicator">
             <span class="weak"></span>
             <span class="medium"></span>
@@ -73,14 +76,14 @@
           <div class="text"></div>
         </div>
         <div class="box">
-          <i class="icon ion-ios-key"></i>
+          <i class="fas fa-unlock"></i>
           <input type="password" placeholder="Retype Password" id="pass2" />
-          <small>Error mssg </small>
+          <small>message to user </small>
         </div>
 
         <br /><br />
         <button class="bttn" type="submit">
-          <span class="sub">Submit</span>
+          <span class="sub">login</span>
         </button>
       </form>
     </div>

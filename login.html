@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/css/login2.css" />
     <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
@@ -23,22 +33,22 @@
         url(resources/css/img/signin.jpg);
     "
   >
-    <div class="container-fluid">
+    <div class="container">
       <form
         id="my-form"
         class="box-form"
         onsubmit="return validateLogin()"
-        action="welcome.html"
+        action="index.html"
       >
         <h2>Sign In</h2>
         <div class="box">
-          <i class="icon ion-ios-mail"></i>
+          <i class="fas fa-at"></i>
           <input id="email" placeholder="Email" type="email" />
           <small> </small>
         </div>
 
         <div class="box">
-          <i class="icon ion-ios-key"></i>
+          <i class="fas fa-unlock"></i>
           <input
             id="pass"
             class="myInput"
@@ -58,9 +68,7 @@
         </button>
         <span class="creatacc"
           >Don't have an account
-          <a
-            href="signup.html"
-            style="font-size: 18px; font-weight: 500; font-style: italic"
+          <a href="signup.html" style="font-size: 18px; font-weight: 500"
             >Sign up
           </a></span
         >

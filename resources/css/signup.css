@@ -118,7 +118,7 @@ h2 {
 }
 .box i {
   position: absolute;
-  transform: translateY(105%);
+  transform: translateY(110%);
   font-size: 25px;
   color: orange;
   transition: all 0.3s;
